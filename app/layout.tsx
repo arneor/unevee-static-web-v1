@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Unevee",
   },
   description:
-    "UNEVEE bridges fitness businesses and health-conscious users. B2B gym management software with CRM, workouts, attendance, billing reminders; and a free B2C health tracking app with workouts and analytics.",
+    "Unevee bridges fitness businesses and health-conscious users. B2B gym management software with CRM, workouts, attendance, billing reminders; and a free B2C health tracking app with workouts and analytics.",
   keywords: [
     "fitness management",
     "gym software",
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://unevee.com",
-    siteName: "UNEVEE",
-    title: "UNEVEE | Fitness Business Platform & Health Tracking App",
+    siteName: "Unevee",
+    title: "Unevee | Fitness Business Platform & Health Tracking App",
     description:
       "Streamline your fitness business operations and empower users to track, train, and transform for free.",
     images: [
@@ -50,14 +50,14 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "UNEVEE – Fitness Business Platform & Health Tracking App",
+        alt: "Unevee – Fitness Business Platform & Health Tracking App",
       },
     ],
     locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "UNEVEE | Fitness Business Platform & Health Tracking App",
+    title: "Unevee | Fitness Business Platform & Health Tracking App",
     description:
       "Streamline your fitness business operations and empower users to track, train, and transform for free.",
     images: ["/og-image.png"],
@@ -112,7 +112,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "UNEVEE",
+              name: "Unevee",
               url: "https://unevee.com",
               logo: "https://unevee.com/assets/logo.jpg",
               description:
@@ -148,7 +148,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "UNEVEE",
+              name: "Unevee",
               url: "https://unevee.com",
               potentialAction: {
                 "@type": "SearchAction",
@@ -188,15 +188,15 @@ export default function RootLayout({
               mainEntity: [
                 {
                   "@type": "Question",
-                  name: "What is UNEVEE?",
+                  name: "What is Unevee?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "UNEVEE is a fitness business management platform and free health tracking app designed for gyms, trainers, and health-conscious users.",
+                    text: "Unevee is a fitness business management platform and free health tracking app designed for gyms, trainers, and health-conscious users.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "Is UNEVEE free?",
+                  name: "Is Unevee free?",
                   acceptedAnswer: {
                     "@type": "Answer",
                     text: "Yes. The health tracking app is free for individuals, while fitness businesses can subscribe to advanced management tools.",
