@@ -383,7 +383,7 @@ function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2025 Unevee. All rights reserved.
+            © {new Date().getFullYear()} Unevee. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm">
             <a

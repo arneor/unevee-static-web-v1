@@ -50,9 +50,9 @@ export function FeaturesSectionWithBentoGrid() {
   return (
     <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto bg-black">
       <div className="px-8">
-        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-white">
+        <h2 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-white">
           Elevate Your Fitness Journey
-        </h4>
+        </h2>
 
         <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto text-neutral-400 text-center font-normal">
           From personalized training plans to global competitions, we provide
@@ -196,7 +196,7 @@ export const SkeletonTwo = () => {
           >
             <Image
               src={image}
-              alt="Workout images"
+              alt="AI-powered workout plan example"
               width="500"
               height="500"
               className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
@@ -216,7 +216,7 @@ export const SkeletonTwo = () => {
           >
             <Image
               src={image}
-              alt="Workout images"
+              alt="AI-powered workout plan example"
               width="500"
               height="500"
               className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"

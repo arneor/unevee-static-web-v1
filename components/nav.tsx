@@ -17,7 +17,8 @@ const navItems: NavItem[] = [
   { type: "link", name: "Contact", href: "#contact" },
 ];
 
-const EXPAND_SCROLL_THRESHOLD = 80;
+const COLLAPSE_SCROLL_THRESHOLD = 100;
+const EXPAND_SCROLL_THRESHOLD = 50;
 
 const containerVariants = {
   expanded: {
@@ -87,6 +88,7 @@ const collapsedIconVariants = {
   },
 };
 
+
 export function NavBar() {
   const [isExpanded, setExpanded] = React.useState(true);
 
@@ -97,10 +99,18 @@ export function NavBar() {
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = lastScrollY.current;
 
-    if (isExpanded && latest > previous && latest > 150) {
+    // Collapse on scroll down
+    if (
+      isExpanded &&
+      latest > previous &&
+      latest > COLLAPSE_SCROLL_THRESHOLD
+    ) {
       setExpanded(false);
       scrollPositionOnCollapse.current = latest;
-    } else if (
+    }
+
+    // Expand on scroll up
+    if (
       !isExpanded &&
       latest < previous &&
       scrollPositionOnCollapse.current - latest > EXPAND_SCROLL_THRESHOLD
@@ -115,21 +125,13 @@ export function NavBar() {
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string
   ) => {
-    e.stopPropagation();
+    e.stopPropagation(); // Prevent the nav's onClick from firing
     if (href.startsWith("#")) {
       e.preventDefault();
       const id = href.slice(1);
       const el = document.getElementById(id);
       if (el) {
-        if (!isExpanded) {
-          setExpanded(true);
-          // Allow expand animation to begin before scrolling
-          setTimeout(() => {
-            el.scrollIntoView({ behavior: "smooth", block: "start" });
-          }, 350);
-        } else {
-          el.scrollIntoView({ behavior: "smooth", block: "center" });
-        }
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }
   };

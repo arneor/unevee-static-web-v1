@@ -1,5 +1,4 @@
 "use client";
-
 import ScrollExpandMedia from "@/components/ui/scroll-expansion-hero";
 import { useState, useEffect } from "react";
 import { renderCanvas } from "./ui/hero-designali";
