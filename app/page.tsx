@@ -9,9 +9,9 @@ import { ZoodoTeam } from "@/components/team";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "UNEVEE | Fitness Business Platform & Health Tracking App",
+  title: "Unevee | Fitness Business Platform & Health Tracking App",
   description:
-    "UNEVEE offers a comprehensive fitness management platform for businesses and a free health tracking app for users. Discover tools for gym management, personal training, and achieving your health goals.",
+    "Unevee offers a comprehensive fitness management platform for businesses and a free health tracking app for users. Discover tools for gym management, personal training, and achieving your health goals.",
 };
 
 export default function Home() {
@@ -19,12 +19,12 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     url: "https://unevee.com/",
-    name: "UNEVEE | Fitness Business Platform & Health Tracking App",
+    name: "Unevee | Fitness Business Platform & Health Tracking App",
     isPartOf: {
       "@id": "https://unevee.com/#website",
     },
     description:
-      "UNEVEE offers a comprehensive fitness management platform for businesses and a free health tracking app for users. Discover tools for gym management, personal training, and achieving your health goals.",
+      "Unevee offers a comprehensive fitness management platform for businesses and a free health tracking app for users. Discover tools for gym management, personal training, and achieving your health goals.",
     inLanguage: "en-IN",
   };
 

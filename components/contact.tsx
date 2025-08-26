@@ -287,7 +287,9 @@ export function ContactSection() {
                 >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="relative">
-                      <label htmlFor="name" className="sr-only">Your Name</label>
+                      <label htmlFor="name" className="sr-only">
+                        Your Name
+                      </label>
                       <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-white/40" />
                       <input
                         id="name"
@@ -313,7 +315,9 @@ export function ContactSection() {
                     </div>
 
                     <div className="relative">
-                      <label htmlFor="email" className="sr-only">Email Address</label>
+                      <label htmlFor="email" className="sr-only">
+                        Email Address
+                      </label>
                       <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-white/40" />
                       <input
                         id="email"
@@ -340,7 +344,9 @@ export function ContactSection() {
                   </div>
 
                   <div className="relative">
-                    <label htmlFor="company" className="sr-only">Company</label>
+                    <label htmlFor="company" className="sr-only">
+                      Company
+                    </label>
                     <Building className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-white/40" />
                     <input
                       id="company"
@@ -402,7 +408,9 @@ export function ContactSection() {
                   </div>
 
                   <div className="relative">
-                    <label htmlFor="message" className="sr-only">Message</label>
+                    <label htmlFor="message" className="sr-only">
+                      Message
+                    </label>
                     <MessageSquare className="absolute left-3 top-4 h-5 w-5 text-white/40" />
                     <textarea
                       id="message"
