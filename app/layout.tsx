@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://unevee.com"),
   title: {
-    default: "UNEVEE | Fitness Business Platform & Health Tracking App",
-    template: "%s | UNEVEE",
+    default: "Unevee | Fitness Business Platform & Health Tracking App",
+    template: "%s | Unevee",
   },
   description:
     "UNEVEE bridges fitness businesses and health-conscious users. B2B gym management software with CRM, workouts, attendance, billing reminders; and a free B2C health tracking app with workouts and analytics.",
