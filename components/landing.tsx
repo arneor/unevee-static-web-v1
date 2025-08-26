@@ -28,7 +28,7 @@ const sampleMediaContent: MediaContentCollection = {
     poster:
       "https://images.pexels.com/videos/5752729/space-earth-universe-cosmos-5752729.jpeg",
     background: "https://wallpapercave.com/wp/wp2333032.jpg",
-    title: "Unevee",
+    title: "UNEVEE",
     date: "2025",
     scrollToExpand: "Coming soon",
     about: {
